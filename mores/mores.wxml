@@ -1,0 +1,59 @@
+<!-- 搜索 -->
+<view class='search'>
+  <input type='text' placeholder='搜索目的地'></input>
+</view>
+<view class='divider'></view>
+<!-- 当季小众推荐 -->
+<view class='now'>
+  <view class='now-title'>-当季小众推荐-</view>
+  <view class='now-body'>
+    <navigator class='now-body-item' wx:for="{{citylist}}" wx:key="{{id}}" wx:if='{{item.intro!=""}}'>
+        <image src='{{item.city_img}}' mode='aspectFill' lazy-load></image>
+        <text class='now-body-dm'>{{item.city_name}}</text>
+        <text class='now-body-js ell'>{{item.intro}}</text>
+    </navigator>
+  </view>
+</view>
+<view class='divider'></view>
+<!-- 城市推荐 -->
+<view class='city'>
+  <text class='city-dm'>浙江</text>
+  <text class='city-js'>山水江南、鱼米之乡</text>
+  <view class='city-pic'>
+    <view class='city-pic-item'>
+      <image src='/assets/images/mores/ningbo.jpg' mode='aspectFill' lazy-load></image>
+      <text>宁波</text>
+    </view>
+    <view class='city-pic-item'>
+      <image src='/assets/images/mores/ningbo.jpg' mode='aspectFill' lazy-load></image>
+      <text>宁波</text>
+    </view>
+    <view class='city-pic-item'>
+      <image src='/assets/images/mores/ningbo.jpg' mode='aspectFill' lazy-load></image>
+      <text>宁波</text>
+    </view>
+  </view>
+</view>
+<view class='divider'></view>
+<view class='others'>
+  <text class='others-title'>国内其他</text>
+  <text class='others-intro'>这里的山水人文，独好</text>
+  <view class='others-det'>
+    <navigator>
+      <view></view>
+      <image src='/assets/images/mores/sanya.png' mode='aspectFill' lazy-load></image>
+      <text>三亚</text>
+    </navigator>
+    <navigator>
+      <view></view>
+      <image src='/assets/images/mores/sanya.png'></image>
+      <text>三亚</text>
+    </navigator>
+    <navigator>
+      <view></view>
+      <image src='/assets/images/mores/sanya.png'></image>
+      <text>三亚</text>
+    </navigator>
+  </view>
+</view>
+<view class='divider'></view>
